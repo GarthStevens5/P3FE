@@ -1,0 +1,44 @@
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+header{
+  height: 10vh;
+  width: 100vw;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-content: center
+}
+
+.main{
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+}
+
+.gameBar{
+  height: 85vh;
+  width: 30vw;
+  background-color: blue;
+}
+
+.chart{
+  height: 85vh;
+  width: 40vw;
+  background-color:orange;
+}
+
+.platformBar{
+  height: 85vh;
+  width: 30vw;
+  background-color:olive;
+}
+
+.footer{
+  height: 5vh;
+  width: 100vw;
+  background-color: brown;
+}
