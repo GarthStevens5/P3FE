@@ -42,7 +42,7 @@ class App extends Component {
         <Header />
         <div className="main">
           <GameBar allGames={this.state.games}/>
-          <ChartPage />
+          <ChartPage allGames={this.state.games} allPlatforms={this.state.platforms} />
           <PlatformBar allPlatforms={this.state.platforms}/>
         </div>
         <Footer />
