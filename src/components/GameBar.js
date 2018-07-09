@@ -11,14 +11,15 @@ class GameBar extends React.Component {
     return (
       <div className="gameBar">
         <h2>My Games</h2>
-        <ul>
+        <ul className="cardContainer">
           {this.props.allGames.map((game) => {
             return (
-              <li>
-                <h4>{game.title}</h4>
-                <h4>{game.dev}</h4>
-                <h4>{game.physOrDigi}</h4>
-                <h4>{game.platform_id}</h4>
+              <li className="gameCard">
+                <h2>{game.title}</h2>
+                <div className="cardDetails">
+                  <h5 className="gameDev">{game.dev}</h5>
+                  <small className="physOrDigi">{game.physOrDigi}</small>
+                </div>
               </li>
             )
           })}

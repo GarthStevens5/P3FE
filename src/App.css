@@ -1,6 +1,8 @@
 body{
   height: 100vh;
   width: 100vw;
+  background-image:
+      url("./components/gaming-wallpaper.jpg")
 }
 
 header{
@@ -22,23 +24,61 @@ header{
 .gameBar{
   height: 85vh;
   width: 30vw;
-  background-color: blue;
+  color: azure;
+}
+.cardContainer{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 4px;
+  max-height: 80vh;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+.gameCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  background-color: rgb(54, 54, 54);
+  width: 10vw;
+  margin: 4px
+}
+
+.cardDetails{
+  display: flex;
+  justify-content: space-between
+}
+
+.gameDev{
+  word-wrap: normal;
+  margin: 2px;
+  color: aqua
+}
+
+.physOrDigi{
+  margin: 2px;
+  color: cadetblue
 }
 
 .chart{
   height: 85vh;
-  width: 40vw;
-  background-color:orange;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.platformBar{
-  height: 85vh;
-  width: 30vw;
-  background-color:olive;
+.theActualChart{
+  height: 40vh;
+  width: 40vw;
 }
 
 .footer{
   height: 5vh;
   width: 100vw;
-  background-color: brown;
 }

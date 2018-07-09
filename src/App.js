@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Header from './components/Header.js'
 import GameBar from './components/GameBar.js'
 import ChartPage from './components/ChartPage.js'
-import PlatformBar from './components/PlatformBar.js'
+// import PlatformBar from './components/PlatformBar.js'
 import Footer from './components/Footer.js'
 import './App.css'
 
@@ -43,7 +43,6 @@ class App extends Component {
         <div className="main">
           <GameBar allGames={this.state.games}/>
           <ChartPage allGames={this.state.games} allPlatforms={this.state.platforms} />
-          <PlatformBar allPlatforms={this.state.platforms}/>
         </div>
         <Footer />
       </div>
