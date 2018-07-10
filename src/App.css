@@ -82,3 +82,29 @@ header{
   height: 5vh;
   width: 100vw;
 }
+
+.Modal {
+  position: fixed;
+  background-color: rgb(54, 54, 54);
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px
+}
+
+.form{
+  display: flex;
+  flex-direction: column
+}
+
+.Overlay {
+  position: fixed;
+  top: 10vh;
+  left: 40vw;
+}
+
+.exitButton{
+  margin-top: 15px;
+}
