@@ -13,10 +13,8 @@ class ChartPage extends React.Component {
       const games = gameList.filter((o1) => {
           return o1.platform_id === platform.id  
       })
-      // return {platform, games}
       return Object.assign(acc, {[platform.name]: games})
     }, {})
-    console.log(match)
   
     return (
       <div className="chart" >

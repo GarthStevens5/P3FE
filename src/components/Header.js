@@ -5,7 +5,7 @@ class Header extends React.Component {
     return (
       <div >
         <header>
-          <h1>Site Name</h1>
+          <h1><i><u>Super Game Shelf</u></i></h1>
         </header>
       </div>
     )

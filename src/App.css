@@ -8,10 +8,11 @@ body{
 header{
   height: 10vh;
   width: 100vw;
-  background-color: aqua;
+  background-color: rgb(167, 167, 167);
   display: flex;
   justify-content: center;
-  align-content: center
+  align-content: center;
+  color: rgb(218, 0, 0)
 }
 
 .main{
@@ -43,9 +44,10 @@ header{
   border-radius: 6px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   padding: 10px;
-  background-color: rgb(54, 54, 54);
+  background-color:rgb(167, 167, 167);
   width: 10vw;
-  margin: 4px
+  margin: 4px;
+  color: indigo;
 }
 
 .cardDetails{
@@ -56,12 +58,12 @@ header{
 .gameDev{
   word-wrap: normal;
   margin: 2px;
-  color: aqua
+  color: rgb(97, 21, 168)
 }
 
 .physOrDigi{
   margin: 2px;
-  color: cadetblue
+  color: darkslateblue
 }
 
 .chart{
@@ -79,8 +81,11 @@ header{
 }
 
 .footer{
+  display: flex;
+  justify-content: center;
   height: 5vh;
   width: 100vw;
+  color: indigo;
 }
 
 .Modal {
@@ -107,4 +112,16 @@ header{
 
 .exitButton{
   margin-top: 15px;
+}
+
+.gameBarTop{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameTitle{
+  display: flex;
+  justify-content: center;
 }

@@ -8,12 +8,11 @@ class GameModal extends React.Component {
     super()
     this.state = {
       showModal: false,
-      title: '',
-      dev: '',
-      physOrDigi: '',
-      platform_id: ''
+      title: 'Enter a Game',
+      dev: 'Enter The Developer',
+      physOrDigi: 'Physical',
+      platform_id: '1'
     }
-    
     this.handleOpenModal = this.handleOpenModal.bind(this)
     this.handleCloseModal = this.handleCloseModal.bind(this)
     this.handleChange = this.handleChange.bind(this)
@@ -26,8 +25,6 @@ class GameModal extends React.Component {
   handleCloseModal () {
     this.setState({ showModal: false })
   }
-  
-
   
   handleErrors(response) {
     if (!response.ok) {
@@ -58,8 +55,6 @@ class GameModal extends React.Component {
     this.setState({
       [key]: value
     })
-    console.log(this.state)
-    
   }
 
   deleteGame = (id) => {
@@ -134,7 +129,7 @@ class GameModal extends React.Component {
               <button onClick={this.postGame} type="submit">Add it!</button>
             </form>
           </div>
-          <button className="exitButton" onClick={this.handleCloseModal}>Exit without adding</button>
+          <button className="exitButton" onClick={this.handleCloseModal}>Finished adding</button>
         </ReactModal>
       </div>
     )
