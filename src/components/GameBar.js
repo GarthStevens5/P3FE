@@ -29,7 +29,7 @@ class GameBar extends React.Component {
       <div className="gameBar">
         <div className="gameBarTop">
           <h2>My Games</h2>
-          <GameModal id="main" />
+          <GameModal allGames={this.props.allGames} id="main" />
         </div>
         <ul onChange={this.handleChange} className="cardContainer">
           {this.props.allGames.map((game) => {
@@ -37,6 +37,13 @@ class GameBar extends React.Component {
               <li key={game.id} className="gameCard">
                 <button className="deleteButton" onClick={() => this.deleteGame(game.id)}>X</button>
                 <h2 className="gameTitle">{game.title}</h2>
+                <h3>{this.props.allPlatforms.map(plat => {
+                  var platId = plat.id
+                  var platName = plat.name
+                  if (platId === game.platform_id) {
+                    return platName
+                  }
+                })}</h3>
                 <div className="cardDetails">
                   <h5 className="gameDev">{game.dev}</h5>
                   <small className="physOrDigi">{game.physOrDigi}</small>

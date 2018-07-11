@@ -26,6 +26,10 @@ header{
   height: 85vh;
   width: 30vw;
   color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
 }
 .cardContainer{
   display: flex;
@@ -34,6 +38,7 @@ header{
   max-height: 80vh;
   overflow-y:auto;
   overflow-x:hidden;
+  margin-top: 15px;
 }
 
 .gameCard{
@@ -48,6 +53,7 @@ header{
   width: 10vw;
   margin: 4px;
   color: indigo;
+  box-shadow: 2px 2px 2px 2px rgba(230, 230, 230, 0.3);
 }
 
 .cardDetails{
@@ -119,6 +125,7 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 10vh;
 }
 
 .gameTitle{
