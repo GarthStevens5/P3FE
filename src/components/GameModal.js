@@ -66,7 +66,7 @@ class GameModal extends React.Component {
     })
     .then(this.handleErrors)
     .then(res => res.json())
-    .then(this.props.allGames())
+    .then(this.props.rerender)
   }
 
   render () {

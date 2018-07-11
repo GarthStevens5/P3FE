@@ -18,6 +18,7 @@ class GameBar extends React.Component {
       headers: { "Content-Type": "application/json" }
     })
     .then(res => res.json())
+    .then(this.props.rerender)
   }
 
   handleChange(event){
